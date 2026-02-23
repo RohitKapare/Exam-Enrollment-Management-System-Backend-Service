@@ -8,6 +8,6 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class ExamResponse {
-    private Long id;
-    private String examName;
+  private Long id;
+  private String examName;
 }

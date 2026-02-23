@@ -10,8 +10,8 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class StudentResponse {
-    private Long id;
-    private String name;
-    private List<SubjectResponse> enrolledSubjects;
-    private List<ExamResponse> enrolledExams;
+  private Long id;
+  private String name;
+  private List<SubjectResponse> enrolledSubjects;
+  private List<ExamResponse> enrolledExams;
 }

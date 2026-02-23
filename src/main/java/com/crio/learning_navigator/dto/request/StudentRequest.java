@@ -10,6 +10,6 @@ import lombok.*;
 @Builder
 public class StudentRequest {
 
-    @NotBlank(message = "Student name must not be blank")
-    private String name;
+  @NotBlank(message = "Student name must not be blank")
+  private String name;
 }

@@ -15,18 +15,18 @@ import java.util.List;
 @Builder
 public class Exam {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @Column(nullable = false)
-    private String examName;
+  @Column(nullable = false)
+  private String examName;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "subject_id", nullable = false)
-    private Subject subject;
+  @ManyToOne(fetch = FetchType.LAZY)
+  @JoinColumn(name = "subject_id", nullable = false)
+  private Subject subject;
 
-    @ManyToMany(mappedBy = "enrolledExams", fetch = FetchType.LAZY)
-    @Builder.Default
-    private List<Student> enrolledStudents = new ArrayList<>();
+  @ManyToMany(mappedBy = "enrolledExams", fetch = FetchType.LAZY)
+  @Builder.Default
+  private List<Student> enrolledStudents = new ArrayList<>();
 }

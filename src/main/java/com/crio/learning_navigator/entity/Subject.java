@@ -15,14 +15,14 @@ import java.util.List;
 @Builder
 public class Subject {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @Column(nullable = false, unique = true)
-    private String subjectName;
+  @Column(nullable = false, unique = true)
+  private String subjectName;
 
-    @ManyToMany(mappedBy = "enrolledSubjects", fetch = FetchType.LAZY)
-    @Builder.Default
-    private List<Student> enrolledStudents = new ArrayList<>();
+  @ManyToMany(mappedBy = "enrolledSubjects", fetch = FetchType.LAZY)
+  @Builder.Default
+  private List<Student> enrolledStudents = new ArrayList<>();
 }

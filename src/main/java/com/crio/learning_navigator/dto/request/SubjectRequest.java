@@ -10,6 +10,6 @@ import lombok.*;
 @Builder
 public class SubjectRequest {
 
-    @NotBlank(message = "Subject name must not be blank")
-    private String subjectName;
+  @NotBlank(message = "Subject name must not be blank")
+  private String subjectName;
 }
