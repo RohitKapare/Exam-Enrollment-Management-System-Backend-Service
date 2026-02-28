@@ -227,3 +227,4 @@ erDiagram
 
 **Rohit Kapare**
 - GitHub: [@RohitKapare](https://github.com/RohitKapare)
+- Note: The python testing files in assessment folder were provided by [Crio.do](https://www.crio.do/) for testing the implementation of project and includes some tests for implementing numbers API, which is no longer online and will not run.
